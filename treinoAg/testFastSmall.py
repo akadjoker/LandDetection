@@ -48,7 +48,7 @@ IMG_SIZE = 128
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
-USE_CSI = False  
+USE_CSI = True  
 USE_MORPH=True
 
 # ==== PREPARAR MODELO ====
