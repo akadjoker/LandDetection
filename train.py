@@ -11,7 +11,7 @@ IMAGENS_DIR = "imagens"
 MASKS_DIR = "masks"
 
 BATCH_SIZE = 4
-EPOCHS = 25
+EPOCHS = 40
 LR = 1e-3
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Usando dispositivo: {DEVICE}")
@@ -22,9 +22,9 @@ from albumentations.pytorch import ToTensorV2
 
 transform = Compose([
     Resize(256, 256),
-    HorizontalFlip(p=0.5),
+    #HorizontalFlip(p=0.5),
     RandomBrightnessContrast(p=0.5),
-    ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=10, p=0.5),
+    #ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=10, p=0.5),
     GaussNoise(p=0.2),
     Normalize(),
     ToTensorV2()

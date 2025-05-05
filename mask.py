@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 
 # ------ CONFIGURAÇÕES ------
-IMAGENS_DIR = "imagens"
-ANOTACOES_DIR = "anotacoes"
+IMAGENS_DIR = "images"
+ANOTACOES_DIR = "labels"
 MASKS_DIR = "masks"
 
 if not os.path.exists(MASKS_DIR):

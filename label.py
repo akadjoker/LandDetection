@@ -3,8 +3,8 @@ import os
 import sys
 
 # ------ CONFIGURAÇÕES ------
-IMAGENS_DIR = "imagens"
-ANOTACOES_DIR = "anotacoes"
+IMAGENS_DIR = "images"
+ANOTACOES_DIR = "labels"
 
 SCREEN_SIZE = (1280, 720)
 RAIO_PONTO = 15

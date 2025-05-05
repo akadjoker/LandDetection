@@ -1,7 +1,7 @@
 import cv2
 import os
 
-VIDEO_PATH = "centro.mp4"
+VIDEO_PATH = "estrada.mp4"
 OUTPUT_DIR = "frames"
 FPS_EXTRAIR = 1  # Quantos frames por segundo queres extrair
 
@@ -13,7 +13,7 @@ fps_video = cap.get(cv2.CAP_PROP_FPS)
 frame_interval = int(fps_video / FPS_EXTRAIR)
 
 count = 0
-saved = 0
+saved = 10000
 
 while cap.isOpened():
     ret, frame = cap.read()
