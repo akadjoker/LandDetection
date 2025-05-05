@@ -8,16 +8,19 @@ from torchvision import transforms
 
 # ==== CONFIGURAÇÕES ====
 MODEL_PATH = 'road_model/best_model.pth'
-IMG_SIZE = 96
+IMG_SIZE = 128
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
 USE_CSI = False  
+USE_MORPH=True
 
 # ==== PREPARAR MODELO ====
 model = JetsonRoadNet().to(DEVICE)
 model.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE))
 model.eval()
+
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
 # ==== TRANSFORMAÇÃO ====
 def preprocess(frame):
@@ -27,7 +30,7 @@ def preprocess(frame):
     img_tensor = torch.from_numpy(img_norm.transpose(2, 0, 1)).unsqueeze(0).to(DEVICE)
     return img_tensor
 
-# ==== CAPTURA DE VÍDEO ====
+ 
 if USE_CSI:
     cam_set = "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=640, height=480, framerate=30/1 ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
     cap = cv2.VideoCapture(cam_set, cv2.CAP_GSTREAMER)
@@ -38,7 +41,7 @@ if not cap.isOpened():
     print("Erro ao abrir câmara.")
     exit()
 
-# ==== LOOP DE INFERÊNCIA ====
+ 
 prev_time = time.time()
 
 while True:
@@ -47,6 +50,7 @@ while True:
         break
 
     original = frame.copy()
+    h, w = frame.shape[:2]
 
     # Pré-processamento
     tensor = preprocess(frame)
@@ -55,15 +59,24 @@ while True:
     with torch.no_grad():
         pred = model(tensor)
     pred_np = pred.squeeze().cpu().numpy()
-    pred_binary = (pred_np > 0.2).astype(np.uint8) * 255
+    pred = pred.cpu().squeeze().numpy()
+    pred = (pred > 0.3).astype(np.uint8) * 255
+    pred = cv2.resize(pred, (w, h))
 
-    # Redimensionar máscara para sobrepor no frame original
-    pred_resized = cv2.resize(pred_binary, (frame.shape[1], frame.shape[0]), interpolation=cv2.INTER_NEAREST)
+
+
+    # === Morphology ===
+    if USE_MORPH:
+        pred = cv2.morphologyEx(pred, cv2.MORPH_CLOSE, kernel)
+        pred = cv2.morphologyEx(pred, cv2.MORPH_OPEN, kernel)
+        pred_resized = cv2.dilate(pred, kernel, iterations=1)
+    else:    
+        pred_resized = cv2.resize(pred, (frame.shape[1], frame.shape[0]), interpolation=cv2.INTER_NEAREST)
 
     # Criar overlay verde
     mask_color = np.zeros_like(original)
     mask_color[:, :, 1] = pred_resized
-    overlay = cv2.addWeighted(original, 0.7, mask_color, 0.8, 0)
+    overlay = cv2.addWeighted(original, 0.5, mask_color, 0.9, 0)
 
     # ==== FPS ====
     current_time = time.time()
