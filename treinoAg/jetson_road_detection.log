@@ -246,3 +246,381 @@
 2025-05-05 11:46:28,126 - INFO - Training completed in 0:01:37.695262
 2025-05-05 11:46:28,135 - INFO - Final model saved to road_model/final_model.pth
 2025-05-05 11:46:28,420 - INFO - Training complete with best Dice score: 0.2235
+2025-05-05 12:39:42,882 - INFO - Using device: cuda
+2025-05-05 12:39:42,884 - INFO - Found 222 images and 222 masks
+2025-05-05 12:39:42,991 - INFO - Model parameters: 87,932
+2025-05-05 12:39:43,460 - INFO - Using standard BCE Loss
+2025-05-05 12:39:43,460 - INFO - Starting Jetson road detection model training at 2025-05-05 12:39:43.460596
+2025-05-05 12:39:47,841 - INFO - Epoch 1/100 - Train Loss: 0.5368, Train Dice: 0.0312, Val Loss: 0.5170, Val Dice: 0.0309
+2025-05-05 12:39:47,931 - INFO - New best model saved with validation loss: 0.5170
+2025-05-05 12:39:52,033 - INFO - Epoch 2/100 - Train Loss: 0.4638, Train Dice: 0.0327, Val Loss: 0.4012, Val Dice: 0.0309
+2025-05-05 12:39:52,041 - INFO - New best model saved with validation loss: 0.4012
+2025-05-05 12:39:56,024 - INFO - Epoch 3/100 - Train Loss: 0.3905, Train Dice: 0.0354, Val Loss: 0.3479, Val Dice: 0.0358
+2025-05-05 12:39:56,031 - INFO - New best model saved with validation loss: 0.3479
+2025-05-05 12:40:00,040 - INFO - Epoch 4/100 - Train Loss: 0.3160, Train Dice: 0.0371, Val Loss: 0.2720, Val Dice: 0.0384
+2025-05-05 12:40:00,048 - INFO - New best model saved with validation loss: 0.2720
+2025-05-05 12:40:04,024 - INFO - Epoch 5/100 - Train Loss: 0.2513, Train Dice: 0.0406, Val Loss: 0.2146, Val Dice: 0.0429
+2025-05-05 12:40:05,032 - INFO - New best model saved with validation loss: 0.2146
+2025-05-05 12:40:09,039 - INFO - Epoch 6/100 - Train Loss: 0.2031, Train Dice: 0.0472, Val Loss: 0.1806, Val Dice: 0.0496
+2025-05-05 12:40:09,048 - INFO - New best model saved with validation loss: 0.1806
+2025-05-05 12:40:13,029 - INFO - Epoch 7/100 - Train Loss: 0.1686, Train Dice: 0.0544, Val Loss: 0.1553, Val Dice: 0.0579
+2025-05-05 12:40:13,036 - INFO - New best model saved with validation loss: 0.1553
+2025-05-05 12:40:17,001 - INFO - Epoch 8/100 - Train Loss: 0.1431, Train Dice: 0.0614, Val Loss: 0.1268, Val Dice: 0.0667
+2025-05-05 12:40:17,008 - INFO - New best model saved with validation loss: 0.1268
+2025-05-05 12:40:20,978 - INFO - Epoch 9/100 - Train Loss: 0.1243, Train Dice: 0.0689, Val Loss: 0.1182, Val Dice: 0.0717
+2025-05-05 12:40:20,985 - INFO - New best model saved with validation loss: 0.1182
+2025-05-05 12:40:24,965 - INFO - Epoch 10/100 - Train Loss: 0.1097, Train Dice: 0.0763, Val Loss: 0.1009, Val Dice: 0.0760
+2025-05-05 12:40:25,861 - INFO - New best model saved with validation loss: 0.1009
+2025-05-05 12:40:29,853 - INFO - Epoch 11/100 - Train Loss: 0.0993, Train Dice: 0.0825, Val Loss: 0.0932, Val Dice: 0.0913
+2025-05-05 12:40:29,860 - INFO - New best model saved with validation loss: 0.0932
+2025-05-05 12:40:33,844 - INFO - Epoch 12/100 - Train Loss: 0.0896, Train Dice: 0.0936, Val Loss: 0.0845, Val Dice: 0.0955
+2025-05-05 12:40:33,852 - INFO - New best model saved with validation loss: 0.0845
+2025-05-05 12:40:37,843 - INFO - Epoch 13/100 - Train Loss: 0.0821, Train Dice: 0.1019, Val Loss: 0.0764, Val Dice: 0.1038
+2025-05-05 12:40:37,852 - INFO - New best model saved with validation loss: 0.0764
+2025-05-05 12:40:41,860 - INFO - Epoch 14/100 - Train Loss: 0.0766, Train Dice: 0.1111, Val Loss: 0.0744, Val Dice: 0.1143
+2025-05-05 12:40:41,868 - INFO - New best model saved with validation loss: 0.0744
+2025-05-05 12:40:45,910 - INFO - Epoch 15/100 - Train Loss: 0.0728, Train Dice: 0.1146, Val Loss: 0.0743, Val Dice: 0.1116
+2025-05-05 12:40:46,900 - INFO - New best model saved with validation loss: 0.0743
+2025-05-05 12:40:50,899 - INFO - Epoch 16/100 - Train Loss: 0.0692, Train Dice: 0.1236, Val Loss: 0.0688, Val Dice: 0.1271
+2025-05-05 12:40:50,906 - INFO - New best model saved with validation loss: 0.0688
+2025-05-05 12:40:54,887 - INFO - Epoch 17/100 - Train Loss: 0.0664, Train Dice: 0.1307, Val Loss: 0.0628, Val Dice: 0.1307
+2025-05-05 12:40:54,894 - INFO - New best model saved with validation loss: 0.0628
+2025-05-05 12:40:58,884 - INFO - Epoch 18/100 - Train Loss: 0.0637, Train Dice: 0.1358, Val Loss: 0.0620, Val Dice: 0.1371
+2025-05-05 12:40:58,891 - INFO - New best model saved with validation loss: 0.0620
+2025-05-05 12:41:02,874 - INFO - Epoch 19/100 - Train Loss: 0.0612, Train Dice: 0.1437, Val Loss: 0.0601, Val Dice: 0.1445
+2025-05-05 12:41:02,882 - INFO - New best model saved with validation loss: 0.0601
+2025-05-05 12:41:06,861 - INFO - Epoch 20/100 - Train Loss: 0.0594, Train Dice: 0.1494, Val Loss: 0.0595, Val Dice: 0.1449
+2025-05-05 12:41:07,741 - INFO - New best model saved with validation loss: 0.0595
+2025-05-05 12:41:11,728 - INFO - Epoch 21/100 - Train Loss: 0.0578, Train Dice: 0.1580, Val Loss: 0.0586, Val Dice: 0.1555
+2025-05-05 12:41:11,735 - INFO - New best model saved with validation loss: 0.0586
+2025-05-05 12:41:15,725 - INFO - Epoch 22/100 - Train Loss: 0.0559, Train Dice: 0.1650, Val Loss: 0.0579, Val Dice: 0.1560
+2025-05-05 12:41:15,733 - INFO - New best model saved with validation loss: 0.0579
+2025-05-05 12:41:19,716 - INFO - Epoch 23/100 - Train Loss: 0.0549, Train Dice: 0.1700, Val Loss: 0.0574, Val Dice: 0.1665
+2025-05-05 12:41:19,724 - INFO - New best model saved with validation loss: 0.0574
+2025-05-05 12:41:23,713 - INFO - Epoch 24/100 - Train Loss: 0.0539, Train Dice: 0.1759, Val Loss: 0.0542, Val Dice: 0.1701
+2025-05-05 12:41:23,720 - INFO - New best model saved with validation loss: 0.0542
+2025-05-05 12:41:27,710 - INFO - Epoch 25/100 - Train Loss: 0.0528, Train Dice: 0.1814, Val Loss: 0.0539, Val Dice: 0.1680
+2025-05-05 12:41:28,680 - INFO - New best model saved with validation loss: 0.0539
+2025-05-05 12:41:32,672 - INFO - Epoch 26/100 - Train Loss: 0.0520, Train Dice: 0.1840, Val Loss: 0.0527, Val Dice: 0.1692
+2025-05-05 12:41:32,680 - INFO - New best model saved with validation loss: 0.0527
+2025-05-05 12:41:36,669 - INFO - Epoch 27/100 - Train Loss: 0.0518, Train Dice: 0.1886, Val Loss: 0.0529, Val Dice: 0.1829
+2025-05-05 12:41:36,669 - INFO - Early stopping counter: 1/7
+2025-05-05 12:41:40,652 - INFO - Epoch 28/100 - Train Loss: 0.0515, Train Dice: 0.1877, Val Loss: 0.0529, Val Dice: 0.1768
+2025-05-05 12:41:40,653 - INFO - Early stopping counter: 2/7
+2025-05-05 12:41:44,636 - INFO - Epoch 29/100 - Train Loss: 0.0506, Train Dice: 0.1925, Val Loss: 0.0548, Val Dice: 0.1733
+2025-05-05 12:41:44,636 - INFO - Early stopping counter: 3/7
+2025-05-05 12:41:48,619 - INFO - Epoch 30/100 - Train Loss: 0.0496, Train Dice: 0.1980, Val Loss: 0.0551, Val Dice: 0.1762
+2025-05-05 12:41:49,477 - INFO - Early stopping counter: 4/7
+2025-05-05 12:41:53,466 - INFO - Epoch 31/100 - Train Loss: 0.0495, Train Dice: 0.1994, Val Loss: 0.0514, Val Dice: 0.1865
+2025-05-05 12:41:53,475 - INFO - New best model saved with validation loss: 0.0514
+2025-05-05 12:41:57,510 - INFO - Epoch 32/100 - Train Loss: 0.0492, Train Dice: 0.1974, Val Loss: 0.0508, Val Dice: 0.1903
+2025-05-05 12:41:57,518 - INFO - New best model saved with validation loss: 0.0508
+2025-05-05 12:42:01,537 - INFO - Epoch 33/100 - Train Loss: 0.0485, Train Dice: 0.2058, Val Loss: 0.0508, Val Dice: 0.1868
+2025-05-05 12:42:01,537 - INFO - Early stopping counter: 1/7
+2025-05-05 12:42:05,576 - INFO - Epoch 34/100 - Train Loss: 0.0475, Train Dice: 0.2101, Val Loss: 0.0503, Val Dice: 0.1931
+2025-05-05 12:42:05,583 - INFO - New best model saved with validation loss: 0.0503
+2025-05-05 12:42:09,619 - INFO - Epoch 35/100 - Train Loss: 0.0490, Train Dice: 0.2027, Val Loss: 0.0501, Val Dice: 0.1910
+2025-05-05 12:42:10,484 - INFO - New best model saved with validation loss: 0.0501
+2025-05-05 12:42:14,499 - INFO - Epoch 36/100 - Train Loss: 0.0477, Train Dice: 0.2082, Val Loss: 0.0501, Val Dice: 0.2002
+2025-05-05 12:42:14,499 - INFO - Early stopping counter: 1/7
+2025-05-05 12:42:18,509 - INFO - Epoch 37/100 - Train Loss: 0.0482, Train Dice: 0.2086, Val Loss: 0.0497, Val Dice: 0.1964
+2025-05-05 12:42:18,518 - INFO - New best model saved with validation loss: 0.0497
+2025-05-05 12:42:22,525 - INFO - Epoch 38/100 - Train Loss: 0.0474, Train Dice: 0.2149, Val Loss: 0.0497, Val Dice: 0.1989
+2025-05-05 12:42:22,525 - INFO - Early stopping counter: 1/7
+2025-05-05 12:42:26,539 - INFO - Epoch 39/100 - Train Loss: 0.0465, Train Dice: 0.2189, Val Loss: 0.0494, Val Dice: 0.2000
+2025-05-05 12:42:26,545 - INFO - New best model saved with validation loss: 0.0494
+2025-05-05 12:42:30,547 - INFO - Epoch 40/100 - Train Loss: 0.0466, Train Dice: 0.2192, Val Loss: 0.0496, Val Dice: 0.1941
+2025-05-05 12:42:31,509 - INFO - Early stopping counter: 1/7
+2025-05-05 12:42:35,518 - INFO - Epoch 41/100 - Train Loss: 0.0468, Train Dice: 0.2161, Val Loss: 0.0499, Val Dice: 0.1982
+2025-05-05 12:42:35,518 - INFO - Early stopping counter: 2/7
+2025-05-05 12:42:39,519 - INFO - Epoch 42/100 - Train Loss: 0.0471, Train Dice: 0.2156, Val Loss: 0.0489, Val Dice: 0.2027
+2025-05-05 12:42:39,527 - INFO - New best model saved with validation loss: 0.0489
+2025-05-05 12:42:43,548 - INFO - Epoch 43/100 - Train Loss: 0.0457, Train Dice: 0.2192, Val Loss: 0.0510, Val Dice: 0.1922
+2025-05-05 12:42:43,548 - INFO - Early stopping counter: 1/7
+2025-05-05 12:42:47,550 - INFO - Epoch 44/100 - Train Loss: 0.0475, Train Dice: 0.2170, Val Loss: 0.0494, Val Dice: 0.2001
+2025-05-05 12:42:47,550 - INFO - Early stopping counter: 2/7
+2025-05-05 12:42:51,551 - INFO - Epoch 45/100 - Train Loss: 0.0458, Train Dice: 0.2213, Val Loss: 0.0494, Val Dice: 0.2039
+2025-05-05 12:42:52,401 - INFO - Early stopping counter: 3/7
+2025-05-05 12:42:56,407 - INFO - Epoch 46/100 - Train Loss: 0.0447, Train Dice: 0.2280, Val Loss: 0.0498, Val Dice: 0.2013
+2025-05-05 12:42:56,407 - INFO - Early stopping counter: 4/7
+2025-05-05 12:43:00,474 - INFO - Epoch 47/100 - Train Loss: 0.0450, Train Dice: 0.2266, Val Loss: 0.0490, Val Dice: 0.2013
+2025-05-05 12:43:00,474 - INFO - Early stopping counter: 5/7
+2025-05-05 12:43:04,544 - INFO - Epoch 48/100 - Train Loss: 0.0446, Train Dice: 0.2327, Val Loss: 0.0486, Val Dice: 0.2125
+2025-05-05 12:43:04,551 - INFO - New best model saved with validation loss: 0.0486
+2025-05-05 12:43:08,554 - INFO - Epoch 49/100 - Train Loss: 0.0436, Train Dice: 0.2329, Val Loss: 0.0491, Val Dice: 0.2048
+2025-05-05 12:43:08,555 - INFO - Early stopping counter: 1/7
+2025-05-05 12:43:12,614 - INFO - Epoch 50/100 - Train Loss: 0.0439, Train Dice: 0.2342, Val Loss: 0.0484, Val Dice: 0.2124
+2025-05-05 12:43:13,635 - INFO - New best model saved with validation loss: 0.0484
+2025-05-05 12:43:17,774 - INFO - Epoch 51/100 - Train Loss: 0.0440, Train Dice: 0.2355, Val Loss: 0.0489, Val Dice: 0.2102
+2025-05-05 12:43:17,774 - INFO - Early stopping counter: 1/7
+2025-05-05 12:43:21,962 - INFO - Epoch 52/100 - Train Loss: 0.0450, Train Dice: 0.2342, Val Loss: 0.0487, Val Dice: 0.2125
+2025-05-05 12:43:21,963 - INFO - Early stopping counter: 2/7
+2025-05-05 12:43:26,063 - INFO - Epoch 53/100 - Train Loss: 0.0440, Train Dice: 0.2332, Val Loss: 0.0486, Val Dice: 0.2106
+2025-05-05 12:43:26,064 - INFO - Early stopping counter: 3/7
+2025-05-05 12:43:30,212 - INFO - Epoch 54/100 - Train Loss: 0.0437, Train Dice: 0.2375, Val Loss: 0.0485, Val Dice: 0.2125
+2025-05-05 12:43:30,212 - INFO - Early stopping counter: 4/7
+2025-05-05 12:43:34,250 - INFO - Epoch 55/100 - Train Loss: 0.0446, Train Dice: 0.2349, Val Loss: 0.0488, Val Dice: 0.2120
+2025-05-05 12:43:35,119 - INFO - Early stopping counter: 5/7
+2025-05-05 12:43:39,146 - INFO - Epoch 56/100 - Train Loss: 0.0431, Train Dice: 0.2398, Val Loss: 0.0487, Val Dice: 0.2128
+2025-05-05 12:43:39,146 - INFO - Early stopping counter: 6/7
+2025-05-05 12:43:43,159 - INFO - Epoch 57/100 - Train Loss: 0.0432, Train Dice: 0.2413, Val Loss: 0.0485, Val Dice: 0.2136
+2025-05-05 12:43:43,159 - INFO - Early stopping counter: 7/7
+2025-05-05 12:43:43,160 - INFO - Early stopping triggered
+2025-05-05 12:43:43,160 - INFO - Early stopping triggered
+2025-05-05 12:43:43,160 - INFO - Training completed in 0:03:59.699618
+2025-05-05 12:43:43,167 - INFO - Final model saved to road_model/final_model.pth
+2025-05-05 12:43:43,510 - INFO - Training complete with best Dice score: 0.2136
+2025-05-05 12:49:02,127 - INFO - Using device: cuda
+2025-05-05 12:49:02,129 - INFO - Found 222 images and 222 masks
+2025-05-05 12:49:02,231 - INFO - Model parameters: 87,932
+2025-05-05 12:49:02,712 - INFO - Using standard BCE Loss
+2025-05-05 12:49:02,712 - INFO - Starting Jetson road detection model training at 2025-05-05 12:49:02.712528
+2025-05-05 12:49:04,022 - INFO - Epoch 1/100 - Train Loss: 0.5380, Train Dice: 0.0315, Val Loss: 0.5235, Val Dice: 0.0308
+2025-05-05 12:49:04,108 - INFO - New best model saved with validation loss: 0.5235
+2025-05-05 12:49:04,983 - INFO - Epoch 2/100 - Train Loss: 0.4659, Train Dice: 0.0332, Val Loss: 0.4319, Val Dice: 0.0315
+2025-05-05 12:49:04,992 - INFO - New best model saved with validation loss: 0.4319
+2025-05-05 12:49:05,894 - INFO - Epoch 3/100 - Train Loss: 0.3932, Train Dice: 0.0354, Val Loss: 0.3560, Val Dice: 0.0347
+2025-05-05 12:49:05,900 - INFO - New best model saved with validation loss: 0.3560
+2025-05-05 12:49:06,789 - INFO - Epoch 4/100 - Train Loss: 0.3159, Train Dice: 0.0359, Val Loss: 0.2679, Val Dice: 0.0361
+2025-05-05 12:49:06,796 - INFO - New best model saved with validation loss: 0.2679
+2025-05-05 12:49:07,686 - INFO - Epoch 5/100 - Train Loss: 0.2502, Train Dice: 0.0375, Val Loss: 0.2229, Val Dice: 0.0394
+2025-05-05 12:49:08,677 - INFO - New best model saved with validation loss: 0.2229
+2025-05-05 12:49:09,561 - INFO - Epoch 6/100 - Train Loss: 0.2032, Train Dice: 0.0424, Val Loss: 0.1784, Val Dice: 0.0446
+2025-05-05 12:49:09,570 - INFO - New best model saved with validation loss: 0.1784
+2025-05-05 12:49:10,473 - INFO - Epoch 7/100 - Train Loss: 0.1702, Train Dice: 0.0474, Val Loss: 0.1567, Val Dice: 0.0513
+2025-05-05 12:49:10,481 - INFO - New best model saved with validation loss: 0.1567
+2025-05-05 12:49:11,360 - INFO - Epoch 8/100 - Train Loss: 0.1451, Train Dice: 0.0539, Val Loss: 0.1339, Val Dice: 0.0563
+2025-05-05 12:49:11,367 - INFO - New best model saved with validation loss: 0.1339
+2025-05-05 12:49:12,236 - INFO - Epoch 9/100 - Train Loss: 0.1267, Train Dice: 0.0590, Val Loss: 0.1160, Val Dice: 0.0625
+2025-05-05 12:49:12,243 - INFO - New best model saved with validation loss: 0.1160
+2025-05-05 12:49:13,113 - INFO - Epoch 10/100 - Train Loss: 0.1120, Train Dice: 0.0661, Val Loss: 0.1064, Val Dice: 0.0680
+2025-05-05 12:49:13,908 - INFO - New best model saved with validation loss: 0.1064
+2025-05-05 12:49:14,792 - INFO - Epoch 11/100 - Train Loss: 0.1017, Train Dice: 0.0716, Val Loss: 0.0951, Val Dice: 0.0757
+2025-05-05 12:49:14,801 - INFO - New best model saved with validation loss: 0.0951
+2025-05-05 12:49:15,696 - INFO - Epoch 12/100 - Train Loss: 0.0923, Train Dice: 0.0806, Val Loss: 0.0880, Val Dice: 0.0819
+2025-05-05 12:49:15,706 - INFO - New best model saved with validation loss: 0.0880
+2025-05-05 12:49:16,590 - INFO - Epoch 13/100 - Train Loss: 0.0854, Train Dice: 0.0882, Val Loss: 0.0790, Val Dice: 0.0903
+2025-05-05 12:49:16,596 - INFO - New best model saved with validation loss: 0.0790
+2025-05-05 12:49:17,474 - INFO - Epoch 14/100 - Train Loss: 0.0795, Train Dice: 0.0961, Val Loss: 0.0785, Val Dice: 0.0982
+2025-05-05 12:49:17,483 - INFO - New best model saved with validation loss: 0.0785
+2025-05-05 12:49:18,371 - INFO - Epoch 15/100 - Train Loss: 0.0757, Train Dice: 0.0997, Val Loss: 0.0725, Val Dice: 0.1012
+2025-05-05 12:49:19,245 - INFO - New best model saved with validation loss: 0.0725
+2025-05-05 12:49:20,123 - INFO - Epoch 16/100 - Train Loss: 0.0711, Train Dice: 0.1101, Val Loss: 0.0707, Val Dice: 0.1133
+2025-05-05 12:49:20,131 - INFO - New best model saved with validation loss: 0.0707
+2025-05-05 12:49:21,007 - INFO - Epoch 17/100 - Train Loss: 0.0686, Train Dice: 0.1169, Val Loss: 0.0681, Val Dice: 0.1208
+2025-05-05 12:49:21,014 - INFO - New best model saved with validation loss: 0.0681
+2025-05-05 12:49:21,896 - INFO - Epoch 18/100 - Train Loss: 0.0654, Train Dice: 0.1227, Val Loss: 0.0629, Val Dice: 0.1204
+2025-05-05 12:49:21,903 - INFO - New best model saved with validation loss: 0.0629
+2025-05-05 12:49:22,783 - INFO - Epoch 19/100 - Train Loss: 0.0629, Train Dice: 0.1280, Val Loss: 0.0628, Val Dice: 0.1303
+2025-05-05 12:49:22,792 - INFO - New best model saved with validation loss: 0.0628
+2025-05-05 12:49:23,676 - INFO - Epoch 20/100 - Train Loss: 0.0610, Train Dice: 0.1346, Val Loss: 0.0601, Val Dice: 0.1305
+2025-05-05 12:49:24,461 - INFO - New best model saved with validation loss: 0.0601
+2025-05-05 12:49:25,346 - INFO - Epoch 21/100 - Train Loss: 0.0593, Train Dice: 0.1422, Val Loss: 0.0581, Val Dice: 0.1447
+2025-05-05 12:49:25,354 - INFO - New best model saved with validation loss: 0.0581
+2025-05-05 12:49:26,229 - INFO - Epoch 22/100 - Train Loss: 0.0575, Train Dice: 0.1471, Val Loss: 0.0573, Val Dice: 0.1438
+2025-05-05 12:49:26,238 - INFO - New best model saved with validation loss: 0.0573
+2025-05-05 12:49:27,123 - INFO - Epoch 23/100 - Train Loss: 0.0560, Train Dice: 0.1533, Val Loss: 0.0593, Val Dice: 0.1487
+2025-05-05 12:49:27,124 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:28,023 - INFO - Epoch 24/100 - Train Loss: 0.0550, Train Dice: 0.1586, Val Loss: 0.0567, Val Dice: 0.1522
+2025-05-05 12:49:28,030 - INFO - New best model saved with validation loss: 0.0567
+2025-05-05 12:49:28,910 - INFO - Epoch 25/100 - Train Loss: 0.0533, Train Dice: 0.1668, Val Loss: 0.0533, Val Dice: 0.1573
+2025-05-05 12:49:29,677 - INFO - New best model saved with validation loss: 0.0533
+2025-05-05 12:49:30,566 - INFO - Epoch 26/100 - Train Loss: 0.0527, Train Dice: 0.1689, Val Loss: 0.0534, Val Dice: 0.1617
+2025-05-05 12:49:30,566 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:31,450 - INFO - Epoch 27/100 - Train Loss: 0.0521, Train Dice: 0.1741, Val Loss: 0.0529, Val Dice: 0.1698
+2025-05-05 12:49:31,457 - INFO - New best model saved with validation loss: 0.0529
+2025-05-05 12:49:32,349 - INFO - Epoch 28/100 - Train Loss: 0.0518, Train Dice: 0.1766, Val Loss: 0.0528, Val Dice: 0.1597
+2025-05-05 12:49:32,357 - INFO - New best model saved with validation loss: 0.0528
+2025-05-05 12:49:33,239 - INFO - Epoch 29/100 - Train Loss: 0.0507, Train Dice: 0.1830, Val Loss: 0.0517, Val Dice: 0.1746
+2025-05-05 12:49:33,246 - INFO - New best model saved with validation loss: 0.0517
+2025-05-05 12:49:34,132 - INFO - Epoch 30/100 - Train Loss: 0.0496, Train Dice: 0.1858, Val Loss: 0.0534, Val Dice: 0.1714
+2025-05-05 12:49:35,010 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:35,906 - INFO - Epoch 31/100 - Train Loss: 0.0495, Train Dice: 0.1883, Val Loss: 0.0507, Val Dice: 0.1774
+2025-05-05 12:49:35,914 - INFO - New best model saved with validation loss: 0.0507
+2025-05-05 12:49:36,806 - INFO - Epoch 32/100 - Train Loss: 0.0489, Train Dice: 0.1881, Val Loss: 0.0506, Val Dice: 0.1772
+2025-05-05 12:49:36,814 - INFO - New best model saved with validation loss: 0.0506
+2025-05-05 12:49:37,700 - INFO - Epoch 33/100 - Train Loss: 0.0480, Train Dice: 0.1958, Val Loss: 0.0507, Val Dice: 0.1744
+2025-05-05 12:49:37,701 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:38,586 - INFO - Epoch 34/100 - Train Loss: 0.0469, Train Dice: 0.2013, Val Loss: 0.0496, Val Dice: 0.1846
+2025-05-05 12:49:38,593 - INFO - New best model saved with validation loss: 0.0496
+2025-05-05 12:49:39,481 - INFO - Epoch 35/100 - Train Loss: 0.0478, Train Dice: 0.1991, Val Loss: 0.0504, Val Dice: 0.1902
+2025-05-05 12:49:40,241 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:41,145 - INFO - Epoch 36/100 - Train Loss: 0.0469, Train Dice: 0.2026, Val Loss: 0.0496, Val Dice: 0.1898
+2025-05-05 12:49:41,153 - INFO - New best model saved with validation loss: 0.0496
+2025-05-05 12:49:42,035 - INFO - Epoch 37/100 - Train Loss: 0.0473, Train Dice: 0.2015, Val Loss: 0.0494, Val Dice: 0.1913
+2025-05-05 12:49:42,043 - INFO - New best model saved with validation loss: 0.0494
+2025-05-05 12:49:42,936 - INFO - Epoch 38/100 - Train Loss: 0.0458, Train Dice: 0.2117, Val Loss: 0.0485, Val Dice: 0.1963
+2025-05-05 12:49:42,945 - INFO - New best model saved with validation loss: 0.0485
+2025-05-05 12:49:43,853 - INFO - Epoch 39/100 - Train Loss: 0.0449, Train Dice: 0.2176, Val Loss: 0.0483, Val Dice: 0.1891
+2025-05-05 12:49:43,863 - INFO - New best model saved with validation loss: 0.0483
+2025-05-05 12:49:44,781 - INFO - Epoch 40/100 - Train Loss: 0.0442, Train Dice: 0.2220, Val Loss: 0.0485, Val Dice: 0.1944
+2025-05-05 12:49:45,671 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:46,572 - INFO - Epoch 41/100 - Train Loss: 0.0445, Train Dice: 0.2195, Val Loss: 0.0487, Val Dice: 0.1900
+2025-05-05 12:49:46,572 - INFO - Early stopping counter: 2/8
+2025-05-05 12:49:47,462 - INFO - Epoch 42/100 - Train Loss: 0.0447, Train Dice: 0.2195, Val Loss: 0.0480, Val Dice: 0.2003
+2025-05-05 12:49:47,469 - INFO - New best model saved with validation loss: 0.0480
+2025-05-05 12:49:48,358 - INFO - Epoch 43/100 - Train Loss: 0.0432, Train Dice: 0.2261, Val Loss: 0.0482, Val Dice: 0.2004
+2025-05-05 12:49:48,358 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:49,253 - INFO - Epoch 44/100 - Train Loss: 0.0444, Train Dice: 0.2237, Val Loss: 0.0496, Val Dice: 0.1879
+2025-05-05 12:49:49,254 - INFO - Early stopping counter: 2/8
+2025-05-05 12:49:50,165 - INFO - Epoch 45/100 - Train Loss: 0.0426, Train Dice: 0.2341, Val Loss: 0.0484, Val Dice: 0.2042
+2025-05-05 12:49:50,947 - INFO - Early stopping counter: 3/8
+2025-05-05 12:49:51,845 - INFO - Epoch 46/100 - Train Loss: 0.0420, Train Dice: 0.2355, Val Loss: 0.0477, Val Dice: 0.2080
+2025-05-05 12:49:51,853 - INFO - New best model saved with validation loss: 0.0477
+2025-05-05 12:49:52,748 - INFO - Epoch 47/100 - Train Loss: 0.0416, Train Dice: 0.2375, Val Loss: 0.0477, Val Dice: 0.2130
+2025-05-05 12:49:52,757 - INFO - New best model saved with validation loss: 0.0477
+2025-05-05 12:49:53,649 - INFO - Epoch 48/100 - Train Loss: 0.0415, Train Dice: 0.2472, Val Loss: 0.0474, Val Dice: 0.2141
+2025-05-05 12:49:53,657 - INFO - New best model saved with validation loss: 0.0474
+2025-05-05 12:49:54,548 - INFO - Epoch 49/100 - Train Loss: 0.0402, Train Dice: 0.2466, Val Loss: 0.0479, Val Dice: 0.2080
+2025-05-05 12:49:54,549 - INFO - Early stopping counter: 1/8
+2025-05-05 12:49:55,430 - INFO - Epoch 50/100 - Train Loss: 0.0400, Train Dice: 0.2552, Val Loss: 0.0477, Val Dice: 0.2123
+2025-05-05 12:49:56,180 - INFO - Early stopping counter: 2/8
+2025-05-05 12:49:57,072 - INFO - Epoch 51/100 - Train Loss: 0.0397, Train Dice: 0.2552, Val Loss: 0.0482, Val Dice: 0.2080
+2025-05-05 12:49:57,072 - INFO - Early stopping counter: 3/8
+2025-05-05 12:49:57,961 - INFO - Epoch 52/100 - Train Loss: 0.0409, Train Dice: 0.2544, Val Loss: 0.0490, Val Dice: 0.2039
+2025-05-05 12:49:57,961 - INFO - Early stopping counter: 4/8
+2025-05-05 12:49:58,854 - INFO - Epoch 53/100 - Train Loss: 0.0398, Train Dice: 0.2547, Val Loss: 0.0476, Val Dice: 0.2110
+2025-05-05 12:49:58,854 - INFO - Early stopping counter: 5/8
+2025-05-05 12:49:59,735 - INFO - Epoch 54/100 - Train Loss: 0.0389, Train Dice: 0.2625, Val Loss: 0.0478, Val Dice: 0.2137
+2025-05-05 12:49:59,735 - INFO - Early stopping counter: 6/8
+2025-05-05 12:50:00,626 - INFO - Epoch 55/100 - Train Loss: 0.0392, Train Dice: 0.2628, Val Loss: 0.0477, Val Dice: 0.2181
+2025-05-05 12:50:01,490 - INFO - Early stopping counter: 7/8
+2025-05-05 12:50:02,373 - INFO - Epoch 56/100 - Train Loss: 0.0378, Train Dice: 0.2707, Val Loss: 0.0476, Val Dice: 0.2174
+2025-05-05 12:50:02,373 - INFO - Early stopping counter: 8/8
+2025-05-05 12:50:02,373 - INFO - Early stopping triggered
+2025-05-05 12:50:02,373 - INFO - Early stopping triggered
+2025-05-05 12:50:02,373 - INFO - Training completed in 0:00:59.661377
+2025-05-05 12:50:02,381 - INFO - Final model saved to road_model/final_model.pth
+2025-05-05 12:50:02,689 - INFO - Training complete with best Dice score: 0.2181
+2025-05-05 12:53:34,749 - INFO - Using device: cuda
+2025-05-05 12:53:34,750 - INFO - Found 222 images and 222 masks
+2025-05-05 12:53:34,861 - INFO - Model parameters: 87,932
+2025-05-05 12:53:35,326 - INFO - Using standard BCE Loss
+2025-05-05 12:53:35,326 - INFO - Starting Jetson road detection model training at 2025-05-05 12:53:35.326487
+2025-05-05 12:53:37,187 - INFO - Epoch 1/100 - Train Loss: 0.5376, Train Dice: 0.0314, Val Loss: 0.5203, Val Dice: 0.0310
+2025-05-05 12:53:37,274 - INFO - New best model saved with validation loss: 0.5203
+2025-05-05 12:53:38,690 - INFO - Epoch 2/100 - Train Loss: 0.4656, Train Dice: 0.0330, Val Loss: 0.4222, Val Dice: 0.0314
+2025-05-05 12:53:38,696 - INFO - New best model saved with validation loss: 0.4222
+2025-05-05 12:53:40,108 - INFO - Epoch 3/100 - Train Loss: 0.3937, Train Dice: 0.0355, Val Loss: 0.3561, Val Dice: 0.0358
+2025-05-05 12:53:40,116 - INFO - New best model saved with validation loss: 0.3561
+2025-05-05 12:53:41,540 - INFO - Epoch 4/100 - Train Loss: 0.3182, Train Dice: 0.0363, Val Loss: 0.2758, Val Dice: 0.0375
+2025-05-05 12:53:41,547 - INFO - New best model saved with validation loss: 0.2758
+2025-05-05 12:53:43,005 - INFO - Epoch 5/100 - Train Loss: 0.2529, Train Dice: 0.0388, Val Loss: 0.2222, Val Dice: 0.0408
+2025-05-05 12:53:44,023 - INFO - New best model saved with validation loss: 0.2222
+2025-05-05 12:53:45,472 - INFO - Epoch 6/100 - Train Loss: 0.2044, Train Dice: 0.0439, Val Loss: 0.1829, Val Dice: 0.0472
+2025-05-05 12:53:45,480 - INFO - New best model saved with validation loss: 0.1829
+2025-05-05 12:53:46,923 - INFO - Epoch 7/100 - Train Loss: 0.1698, Train Dice: 0.0502, Val Loss: 0.1514, Val Dice: 0.0547
+2025-05-05 12:53:46,931 - INFO - New best model saved with validation loss: 0.1514
+2025-05-05 12:53:48,344 - INFO - Epoch 8/100 - Train Loss: 0.1440, Train Dice: 0.0569, Val Loss: 0.1283, Val Dice: 0.0600
+2025-05-05 12:53:48,351 - INFO - New best model saved with validation loss: 0.1283
+2025-05-05 12:53:49,763 - INFO - Epoch 9/100 - Train Loss: 0.1252, Train Dice: 0.0627, Val Loss: 0.1129, Val Dice: 0.0658
+2025-05-05 12:53:49,770 - INFO - New best model saved with validation loss: 0.1129
+2025-05-05 12:53:51,189 - INFO - Epoch 10/100 - Train Loss: 0.1102, Train Dice: 0.0699, Val Loss: 0.1033, Val Dice: 0.0733
+2025-05-05 12:53:52,036 - INFO - New best model saved with validation loss: 0.1033
+2025-05-05 12:53:53,491 - INFO - Epoch 11/100 - Train Loss: 0.0996, Train Dice: 0.0767, Val Loss: 0.0938, Val Dice: 0.0829
+2025-05-05 12:53:53,498 - INFO - New best model saved with validation loss: 0.0938
+2025-05-05 12:53:54,962 - INFO - Epoch 12/100 - Train Loss: 0.0901, Train Dice: 0.0865, Val Loss: 0.0895, Val Dice: 0.0853
+2025-05-05 12:53:54,969 - INFO - New best model saved with validation loss: 0.0895
+2025-05-05 12:53:56,404 - INFO - Epoch 13/100 - Train Loss: 0.0831, Train Dice: 0.0946, Val Loss: 0.0761, Val Dice: 0.0928
+2025-05-05 12:53:56,412 - INFO - New best model saved with validation loss: 0.0761
+2025-05-05 12:53:57,895 - INFO - Epoch 14/100 - Train Loss: 0.0773, Train Dice: 0.1022, Val Loss: 0.0783, Val Dice: 0.1039
+2025-05-05 12:53:57,895 - INFO - Early stopping counter: 1/8
+2025-05-05 12:53:59,342 - INFO - Epoch 15/100 - Train Loss: 0.0735, Train Dice: 0.1073, Val Loss: 0.0734, Val Dice: 0.1069
+2025-05-05 12:54:00,300 - INFO - New best model saved with validation loss: 0.0734
+2025-05-05 12:54:01,731 - INFO - Epoch 16/100 - Train Loss: 0.0693, Train Dice: 0.1161, Val Loss: 0.0678, Val Dice: 0.1240
+2025-05-05 12:54:01,738 - INFO - New best model saved with validation loss: 0.0678
+2025-05-05 12:54:03,150 - INFO - Epoch 17/100 - Train Loss: 0.0667, Train Dice: 0.1241, Val Loss: 0.0643, Val Dice: 0.1285
+2025-05-05 12:54:03,157 - INFO - New best model saved with validation loss: 0.0643
+2025-05-05 12:54:04,562 - INFO - Epoch 18/100 - Train Loss: 0.0637, Train Dice: 0.1305, Val Loss: 0.0632, Val Dice: 0.1264
+2025-05-05 12:54:04,569 - INFO - New best model saved with validation loss: 0.0632
+2025-05-05 12:54:05,977 - INFO - Epoch 19/100 - Train Loss: 0.0614, Train Dice: 0.1376, Val Loss: 0.0601, Val Dice: 0.1355
+2025-05-05 12:54:05,985 - INFO - New best model saved with validation loss: 0.0601
+2025-05-05 12:54:07,390 - INFO - Epoch 20/100 - Train Loss: 0.0595, Train Dice: 0.1439, Val Loss: 0.0589, Val Dice: 0.1400
+2025-05-05 12:54:08,222 - INFO - New best model saved with validation loss: 0.0589
+2025-05-05 12:54:09,635 - INFO - Epoch 21/100 - Train Loss: 0.0578, Train Dice: 0.1522, Val Loss: 0.0577, Val Dice: 0.1567
+2025-05-05 12:54:09,643 - INFO - New best model saved with validation loss: 0.0577
+2025-05-05 12:54:11,055 - INFO - Epoch 22/100 - Train Loss: 0.0561, Train Dice: 0.1569, Val Loss: 0.0566, Val Dice: 0.1545
+2025-05-05 12:54:11,062 - INFO - New best model saved with validation loss: 0.0566
+2025-05-05 12:54:12,475 - INFO - Epoch 23/100 - Train Loss: 0.0548, Train Dice: 0.1634, Val Loss: 0.0556, Val Dice: 0.1657
+2025-05-05 12:54:12,483 - INFO - New best model saved with validation loss: 0.0556
+2025-05-05 12:54:13,898 - INFO - Epoch 24/100 - Train Loss: 0.0537, Train Dice: 0.1690, Val Loss: 0.0546, Val Dice: 0.1647
+2025-05-05 12:54:13,905 - INFO - New best model saved with validation loss: 0.0546
+2025-05-05 12:54:15,321 - INFO - Epoch 25/100 - Train Loss: 0.0523, Train Dice: 0.1778, Val Loss: 0.0529, Val Dice: 0.1665
+2025-05-05 12:54:16,243 - INFO - New best model saved with validation loss: 0.0529
+2025-05-05 12:54:17,674 - INFO - Epoch 26/100 - Train Loss: 0.0516, Train Dice: 0.1802, Val Loss: 0.0524, Val Dice: 0.1719
+2025-05-05 12:54:17,681 - INFO - New best model saved with validation loss: 0.0524
+2025-05-05 12:54:19,106 - INFO - Epoch 27/100 - Train Loss: 0.0511, Train Dice: 0.1835, Val Loss: 0.0526, Val Dice: 0.1811
+2025-05-05 12:54:19,106 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:20,529 - INFO - Epoch 28/100 - Train Loss: 0.0510, Train Dice: 0.1862, Val Loss: 0.0511, Val Dice: 0.1749
+2025-05-05 12:54:20,536 - INFO - New best model saved with validation loss: 0.0511
+2025-05-05 12:54:21,955 - INFO - Epoch 29/100 - Train Loss: 0.0499, Train Dice: 0.1893, Val Loss: 0.0517, Val Dice: 0.1814
+2025-05-05 12:54:21,955 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:23,365 - INFO - Epoch 30/100 - Train Loss: 0.0491, Train Dice: 0.1944, Val Loss: 0.0534, Val Dice: 0.1755
+2025-05-05 12:54:24,176 - INFO - Early stopping counter: 2/8
+2025-05-05 12:54:25,594 - INFO - Epoch 31/100 - Train Loss: 0.0491, Train Dice: 0.1949, Val Loss: 0.0509, Val Dice: 0.1841
+2025-05-05 12:54:25,601 - INFO - New best model saved with validation loss: 0.0509
+2025-05-05 12:54:27,021 - INFO - Epoch 32/100 - Train Loss: 0.0485, Train Dice: 0.1949, Val Loss: 0.0507, Val Dice: 0.1799
+2025-05-05 12:54:27,028 - INFO - New best model saved with validation loss: 0.0507
+2025-05-05 12:54:28,449 - INFO - Epoch 33/100 - Train Loss: 0.0478, Train Dice: 0.2008, Val Loss: 0.0500, Val Dice: 0.1836
+2025-05-05 12:54:28,457 - INFO - New best model saved with validation loss: 0.0500
+2025-05-05 12:54:29,874 - INFO - Epoch 34/100 - Train Loss: 0.0464, Train Dice: 0.2104, Val Loss: 0.0501, Val Dice: 0.1922
+2025-05-05 12:54:29,874 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:31,295 - INFO - Epoch 35/100 - Train Loss: 0.0476, Train Dice: 0.2059, Val Loss: 0.0490, Val Dice: 0.1961
+2025-05-05 12:54:32,222 - INFO - New best model saved with validation loss: 0.0490
+2025-05-05 12:54:33,645 - INFO - Epoch 36/100 - Train Loss: 0.0460, Train Dice: 0.2102, Val Loss: 0.0487, Val Dice: 0.2041
+2025-05-05 12:54:33,652 - INFO - New best model saved with validation loss: 0.0487
+2025-05-05 12:54:35,063 - INFO - Epoch 37/100 - Train Loss: 0.0465, Train Dice: 0.2129, Val Loss: 0.0502, Val Dice: 0.1968
+2025-05-05 12:54:35,063 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:36,491 - INFO - Epoch 38/100 - Train Loss: 0.0459, Train Dice: 0.2161, Val Loss: 0.0481, Val Dice: 0.2016
+2025-05-05 12:54:36,498 - INFO - New best model saved with validation loss: 0.0481
+2025-05-05 12:54:37,993 - INFO - Epoch 39/100 - Train Loss: 0.0447, Train Dice: 0.2234, Val Loss: 0.0488, Val Dice: 0.1991
+2025-05-05 12:54:37,994 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:39,460 - INFO - Epoch 40/100 - Train Loss: 0.0444, Train Dice: 0.2267, Val Loss: 0.0482, Val Dice: 0.1989
+2025-05-05 12:54:40,300 - INFO - Early stopping counter: 2/8
+2025-05-05 12:54:41,734 - INFO - Epoch 41/100 - Train Loss: 0.0446, Train Dice: 0.2222, Val Loss: 0.0491, Val Dice: 0.1980
+2025-05-05 12:54:41,734 - INFO - Early stopping counter: 3/8
+2025-05-05 12:54:43,212 - INFO - Epoch 42/100 - Train Loss: 0.0451, Train Dice: 0.2209, Val Loss: 0.0477, Val Dice: 0.2115
+2025-05-05 12:54:43,221 - INFO - New best model saved with validation loss: 0.0477
+2025-05-05 12:54:44,671 - INFO - Epoch 43/100 - Train Loss: 0.0433, Train Dice: 0.2276, Val Loss: 0.0484, Val Dice: 0.2090
+2025-05-05 12:54:44,671 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:46,146 - INFO - Epoch 44/100 - Train Loss: 0.0446, Train Dice: 0.2269, Val Loss: 0.0490, Val Dice: 0.2030
+2025-05-05 12:54:46,146 - INFO - Early stopping counter: 2/8
+2025-05-05 12:54:47,567 - INFO - Epoch 45/100 - Train Loss: 0.0426, Train Dice: 0.2381, Val Loss: 0.0478, Val Dice: 0.2133
+2025-05-05 12:54:48,363 - INFO - Early stopping counter: 3/8
+2025-05-05 12:54:49,787 - INFO - Epoch 46/100 - Train Loss: 0.0422, Train Dice: 0.2381, Val Loss: 0.0482, Val Dice: 0.2132
+2025-05-05 12:54:49,788 - INFO - Early stopping counter: 4/8
+2025-05-05 12:54:51,206 - INFO - Epoch 47/100 - Train Loss: 0.0414, Train Dice: 0.2428, Val Loss: 0.0474, Val Dice: 0.2140
+2025-05-05 12:54:51,214 - INFO - New best model saved with validation loss: 0.0474
+2025-05-05 12:54:52,631 - INFO - Epoch 48/100 - Train Loss: 0.0409, Train Dice: 0.2512, Val Loss: 0.0476, Val Dice: 0.2151
+2025-05-05 12:54:52,631 - INFO - Early stopping counter: 1/8
+2025-05-05 12:54:54,043 - INFO - Epoch 49/100 - Train Loss: 0.0400, Train Dice: 0.2517, Val Loss: 0.0476, Val Dice: 0.2148
+2025-05-05 12:54:54,043 - INFO - Early stopping counter: 2/8
+2025-05-05 12:54:55,456 - INFO - Epoch 50/100 - Train Loss: 0.0397, Train Dice: 0.2585, Val Loss: 0.0478, Val Dice: 0.2145
+2025-05-05 12:54:56,375 - INFO - Early stopping counter: 3/8
+2025-05-05 12:54:57,799 - INFO - Epoch 51/100 - Train Loss: 0.0396, Train Dice: 0.2586, Val Loss: 0.0478, Val Dice: 0.2170
+2025-05-05 12:54:57,799 - INFO - Early stopping counter: 4/8
+2025-05-05 12:54:59,225 - INFO - Epoch 52/100 - Train Loss: 0.0408, Train Dice: 0.2579, Val Loss: 0.0474, Val Dice: 0.2215
+2025-05-05 12:54:59,225 - INFO - Early stopping counter: 5/8
+2025-05-05 12:55:00,716 - INFO - Epoch 53/100 - Train Loss: 0.0395, Train Dice: 0.2563, Val Loss: 0.0471, Val Dice: 0.2211
+2025-05-05 12:55:00,725 - INFO - New best model saved with validation loss: 0.0471
+2025-05-05 12:55:02,176 - INFO - Epoch 54/100 - Train Loss: 0.0391, Train Dice: 0.2647, Val Loss: 0.0473, Val Dice: 0.2219
+2025-05-05 12:55:02,176 - INFO - Early stopping counter: 1/8
+2025-05-05 12:55:03,607 - INFO - Epoch 55/100 - Train Loss: 0.0398, Train Dice: 0.2603, Val Loss: 0.0475, Val Dice: 0.2229
+2025-05-05 12:55:04,412 - INFO - Early stopping counter: 2/8
+2025-05-05 12:55:05,832 - INFO - Epoch 56/100 - Train Loss: 0.0383, Train Dice: 0.2695, Val Loss: 0.0474, Val Dice: 0.2235
+2025-05-05 12:55:05,833 - INFO - Early stopping counter: 3/8
+2025-05-05 12:55:07,257 - INFO - Epoch 57/100 - Train Loss: 0.0382, Train Dice: 0.2702, Val Loss: 0.0478, Val Dice: 0.2202
+2025-05-05 12:55:07,257 - INFO - Early stopping counter: 4/8
+2025-05-05 12:55:08,676 - INFO - Epoch 58/100 - Train Loss: 0.0383, Train Dice: 0.2701, Val Loss: 0.0476, Val Dice: 0.2222
+2025-05-05 12:55:08,676 - INFO - Early stopping counter: 5/8
+2025-05-05 12:55:10,087 - INFO - Epoch 59/100 - Train Loss: 0.0375, Train Dice: 0.2748, Val Loss: 0.0476, Val Dice: 0.2194
+2025-05-05 12:55:10,087 - INFO - Early stopping counter: 6/8
+2025-05-05 12:55:11,502 - INFO - Epoch 60/100 - Train Loss: 0.0375, Train Dice: 0.2741, Val Loss: 0.0477, Val Dice: 0.2198
+2025-05-05 12:55:12,428 - INFO - Early stopping counter: 7/8
+2025-05-05 12:55:13,855 - INFO - Epoch 61/100 - Train Loss: 0.0379, Train Dice: 0.2738, Val Loss: 0.0477, Val Dice: 0.2207
+2025-05-05 12:55:13,855 - INFO - Early stopping counter: 8/8
+2025-05-05 12:55:13,855 - INFO - Early stopping triggered
+2025-05-05 12:55:13,855 - INFO - Early stopping triggered
+2025-05-05 12:55:13,855 - INFO - Training completed in 0:01:38.529324
+2025-05-05 12:55:13,863 - INFO - Final model saved to road_model/final_model.pth
+2025-05-05 12:55:14,184 - INFO - Training complete with best Dice score: 0.2235

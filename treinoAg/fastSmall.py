@@ -45,7 +45,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=8, help='Batch size - reduced for Jetson memory')
     parser.add_argument('--epochs', type=int, default=100, help='Number of epochs')
     parser.add_argument('--lr', type=float, default=1e-3, help='Learning rate')
-    parser.add_argument('--patience', type=int, default=7, help='Patience for early stopping')
+    parser.add_argument('--patience', type=int, default=8, help='Patience for early stopping')
     parser.add_argument('--seed', type=int, default=78942, help='Random seed')
     parser.add_argument('--output_dir', type=str, default='road_model', help='Output directory')
     parser.add_argument('--export_onnx', action='store_true', help='Export model to ONNX format')
